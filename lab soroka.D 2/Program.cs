@@ -1,0 +1,11 @@
+﻿int x, a, b, c, y;
+Console.Write("Введите целое трехзначное положительное число - >");
+x = Convert.ToInt32(Console.ReadLine());
+a = x % 10;
+y = 100 * a + (x / 10);
+Console.WriteLine("Первоначальное число было: " + y);
+b = y % 100;
+Console.WriteLine("Зачеркнули первую цифру: " + b);
+b = 10 * b;
+Console.WriteLine("Умножили на 10: " + b);
+b = b + (y / 100);
